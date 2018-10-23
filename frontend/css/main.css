@@ -1,0 +1,4338 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+	line-height: 1;
+}
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol,
+ul {
+	list-style: none;
+}
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption,
+th,
+td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q,
+blockquote {
+	quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	content: "";
+	content: none;
+}
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+	border: none;
+}
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+/* line 12, ../sass/main.scss */
+body {
+	font-family: 'Poppins-Light';
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+	color: #2d2d2d;
+}
+/* line 13, ../sass/main.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins-Medium';
+}
+/* line 14, ../sass/main.scss */
+p {
+	font-family: 'Poppins-Light';
+	font-size: 18px;
+	color: #666666;
+}
+/* line 15, ../sass/main.scss */
+textarea {
+	resize: vertical;
+}
+/* line 16, ../sass/main.scss */
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* line 17, ../sass/main.scss */
+label {
+	font-weight: initial;
+}
+/* line 18, ../sass/main.scss */
+a,
+a:hover {
+	text-decoration: none;
+}
+/* line 19, ../sass/main.scss */
+* html .clearfix {
+	height: 1%;
+}
+/* line 20, ../sass/main.scss */
+.ease,
+a,
+input[type="submit"],
+button {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+/* line 21, ../sass/main.scss */
+.mx-1024 {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+/* line 22, ../sass/main.scss */
+.mx-1250 {
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+/* line 23, ../sass/main.scss */
+.mx-1440 {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+/* line 24, ../sass/main.scss */
+.relative {
+	position: relative;
+}
+/* line 25, ../sass/main.scss */
+.clearfix {
+	display: block;
+	clear: both;
+}
+/* line 27, ../sass/main.scss */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+/* line 29, ../sass/main.scss */
+.center-div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/* line 30, ../sass/main.scss */
+.middle-div {
+	position: absolute;
+	top: 50%;
+	-ms-transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+/* line 31, ../sass/main.scss */
+.hori-div {
+	position: absolute;
+	left: 50%;
+	-ms-transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+/* line 32, ../sass/main.scss */
+.bg-common {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@font-face {
+	font-family: 'Gotham-Book';
+	src: url("../fonts/xtra/Gotham-Book.eot");
+	src: url("../fonts/xtra/Gotham-Book.woff2") format("woff2"), url("../fonts/xtra/Gotham-Book.woff") format("woff"), url("../fonts/xtra/Gotham-Book.ttf") format("truetype"), url("../fonts/xtra/Gotham-Book.svg#Gotham-Book") format("svg"), url("../fonts/xtra/Gotham-Book.eot?#iefix") format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham-Medium';
+	src: url("../fonts/xtra/Gotham-Medium.eot");
+	src: url("../fonts/xtra/Gotham-Medium.woff2") format("woff2"), url("../fonts/xtra/Gotham-Medium.woff") format("woff"), url("../fonts/xtra/Gotham-Medium.ttf") format("truetype"), url("../fonts/xtra/Gotham-Medium.svg#Gotham-Medium") format("svg"), url("../fonts/xtra/Gotham-Medium.eot?#iefix") format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham-Light';
+	src: url("../fonts/xtra/Gotham-Light.eot");
+	src: url("../fonts/xtra/Gotham-Light.woff2") format("woff2"), url("../fonts/xtra/Gotham-Light.woff") format("woff"), url("../fonts/xtra/Gotham-Light.ttf") format("truetype"), url("../fonts/xtra/Gotham-Light.svg#Gotham-Light") format("svg"), url("../fonts/xtra/Gotham-Light.eot?#iefix") format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CoolveticaRg-Regular';
+	src: url("../fonts/xtra/CoolveticaRg-Regular.woff") format("woff"), url("../fonts/xtra/CoolveticaRg-Regular.ttf") format("truetype"), url("../fonts/xtra/CoolveticaRg-Regular.svg#CoolveticaRg-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'coolvetica_rg';
+	src: url("../fonts/xtra/coolvetica_rg.eot");
+	src: url("../fonts/xtra/coolvetica_rg.woff2") format("woff2"), url("../fonts/xtra/coolvetica_rg.eot?#iefix") format("embedded-opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+/* line 90, ../sass/main.scss */
+h1 {
+	font-size: 26px;
+}
+/* line 93, ../sass/main.scss */
+h1:hover {
+	color: red;
+}
+/* line 97, ../sass/main.scss */
+h1 span {
+	color: green;
+}
+/*EDIT*/
+.subscription-section .row .trial-holder h2 {
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 62px;
+	color: #2d2d2d;
+	margin-left: 162px;
+	margin-top: 460px;
+	position: absolute;
+}
+.movie-title h2 {
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	font-size: 36px;
+	text-align: left;
+	line-height: 45px;
+}
+.movie-title h3 {
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	font-size: 12.5px;
+	text-align: left;
+	line-height: 19px;
+	margin-top: -10px;
+}
+.season-label {
+	margin-top: 39px;
+	margin-left: 30px;
+}
+.movie-holder {
+	max-width: 728px;
+	min-height: 392px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.movie-play {
+	max-width: 728px;
+	height: 392px;
+	width: 100%;
+}
+.movie-title p {
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	font-size: 16.67px;
+	text-align: left;
+	line-height: 20px;
+}
+.movie-des p {
+	font-family: "Gotham-Book";
+	text-transform: unset;
+	color: #3d3d3d;
+	font-size: 14.68px;
+	text-align: left;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 24px;
+	text-align: justify;
+}
+.episode-num {
+	font-family: "Gotham-Light";
+	font-size: 20px;
+}
+.episode-num li {
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+}
+.season-num li {
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+}
+.num-pos li.active {
+	background-color: #00557e;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.season-num li.active {
+	background-color: #00557e;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.num-pos li:active {
+	background-color: #00557e;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.season-num-pos {
+	margin-top: 13px;
+	margin-bottom: 26px;
+	margin-left: -375px;
+}
+.num-pos {
+	margin-top: 13px;
+	margin-bottom: 26px;
+}
+.actors p {
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	padding-top: 12px;
+	font-size: 11.5px;
+	text-align: left;
+}
+.season-label {
+	margin-top: 39px;
+}
+.search-books-section-edit .form input {
+	border-radius: 4px 0px 0px 4px;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	width: 551px;
+	height: 31px;
+	padding: 16px;
+	border: 0;
+	font-family: 'Gotham-Light';
+	color: #636363;
+}
+.search-books-section-edit .form button {
+	background-color: #00557e;
+	width: 32px;
+	height: 31px;
+	border: 0;
+	position: absolute;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	color: #fff;
+}
+.book-bg .img-holder {
+	max-width: 375px;
+	min-height: 526px;
+	padding: 16px 13px 18px 13px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0 auto;
+	display: block;
+}
+.book-bg .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	max-width: 392px;
+	min-height: 492px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tv-series-bg .img-holder-tv {
+	width: 100%;
+	height: 658px;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	display: block;
+	margin-top: 4px;
+}
+.tv-series-bg .img-holder-tv .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-watch {
+	background-color: #00557e;
+	width: 145px;
+	height: 32px;
+	border: 0;
+	position: absolute;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	color: #fff;
+	position: relative;
+	font-family: 'Gotham-Medium';
+	margin-top: 29px;
+}
+.book-bottom-link {
+	margin-top: 31px;
+	margin-bottom: 31px;
+	color: #00557e;
+}
+.book-bottom-link li {
+	display: inline-block;
+	margin: 0 20px;
+}
+.i-con {
+	color: #00557e;
+}
+/* line 103, ../sass/main.scss */
+.navi-holder {
+	height: 84px !important;
+	box-shadow: 5px 8.66px 16px 0px #171717;
+	margin-bottom: 0;
+	width: 100%;
+}
+/* line 109, ../sass/main.scss */
+.navi-holder .logo-holder img {
+	padding-left: 114px;
+	padding-top: 6px;
+}
+/* line 114, ../sass/main.scss */
+.navi-holder .right-bar {
+	padding-top: 21px;
+	padding-right: 103px;
+	text-align: center;
+}
+/* line 120, ../sass/main.scss */
+.navi-holder .right-bar .btn-login {
+	width: 112px;
+	height: 38px;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	color: #ffffff;
+	margin-right: 10px;
+}
+/* line 130, ../sass/main.scss */
+.navi-holder .right-bar .btn-signup {
+	width: 112px;
+	height: 38px;
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	color: #00557e;
+}
+/* line 139, ../sass/main.scss */
+.navi-holder .right-bar ul {
+	background-color: transparent;
+	/* padding-bottom: 20px; */
+}
+/* line 142, ../sass/main.scss */
+.navi-holder .right-bar ul li {
+	margin: 0;
+}
+.navi-holder .right-bar ul li:hover a {
+	color: #000;
+}
+/* line 144, ../sass/main.scss */
+.navi-holder .right-bar ul li a {
+	font-family: 'Gotham-Book';
+	line-height: 12px;
+	font-size: 12px;
+	color: #3d3d3d;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+/* line 158, ../sass/main.scss */
+.footer {
+	margin-top: 0 !important;
+}
+/* line 161, ../sass/main.scss */
+.footer .container {
+	height: 308px;
+	width: 100%;
+	text-align: center;
+	padding-top: 73px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+}
+/* line 170, ../sass/main.scss */
+.footer .container .footer-nav {
+	display: flex;
+	justify-content: center;
+}
+/* line 174, ../sass/main.scss */
+.footer .container .footer-nav ul {
+	margin: 0 auto;
+}
+/* line 177, ../sass/main.scss */
+.footer .container .footer-nav ul li {
+	display: inline-block;
+	padding: 20px 12px;
+}
+/* line 180, ../sass/main.scss */
+.footer .container .footer-nav ul li a {
+	font-family: 'Gotham-Book';
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	margin: 0 auto;
+	letter-spacing: 2px;
+}
+/* line 192, ../sass/main.scss */
+.footer .container .form {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+/* line 199, ../sass/main.scss */
+.footer .container .form form input {
+	border-radius: 4px 0px 0px 4px;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	width: 438px;
+	height: 32px;
+	padding: 16px;
+	border: 0;
+	font-family: 'Gotham-Light';
+	color: #636363;
+}
+/* line 209, ../sass/main.scss */
+.footer .container .form form button {
+	background-color: #00557e;
+	width: 105px;
+	height: 32px;
+	border: 0;
+	position: absolute;
+	box-shadow: 0px 2.598px 0px 0px #171717;
+	color: #fff;
+	font-family: 'Gotham-Medium';
+	position: relative;
+	margin-left: -4px;
+}
+/* line 224, ../sass/main.scss */
+.footer .container .social {
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+/* line 232, ../sass/main.scss */
+.footer .container .social ul li {
+	display: inline-block;
+	padding: 0 35px;
+}
+/* line 235, ../sass/main.scss */
+.footer .container .social ul li a {
+	color: #367999 !important;
+}
+/* line 237, ../sass/main.scss */
+.footer .container .social ul li a i {
+	font-weight: bold;
+}
+/* line 249, ../sass/main.scss */
+.home-banner {
+	min-height: 633px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: center;
+}
+/* line 255, ../sass/main.scss */
+.home-banner .banner-content {
+	padding-top: 210px;
+}
+/* line 258, ../sass/main.scss */
+.home-banner .banner-content a button {
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	width: 151px;
+	height: 39px;
+	border: 0;
+	color: #fff;
+	font-family: 'Gotham-Book';
+}
+.home-banner .banner-content a button:hover {
+	background-color: #fff;
+	color: #00557e;
+}
+/* line 271, ../sass/main.scss */
+.subscription-section {
+	min-height: 1028px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 50px;
+}
+/* line 279, ../sass/main.scss */
+.subscription-section .row .hand-image {
+	position: absolute;
+	padding-top: 300px;
+	margin-left: -20px;
+}
+/* line 284, ../sass/main.scss */
+.subscription-section .row .left-margin-hand {
+	margin-left: 400px;
+}
+/* line 287, ../sass/main.scss */
+.subscription-section .row .col-md-12 {
+	text-align: center;
+}
+/* line 290, ../sass/main.scss */
+.subscription-section .row .col-md-12 .plans-header {
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 53px;
+	background: -webkit-linear-gradient(#0d0d0d, #5f5c5c, #444444);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+/* line 300, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row {
+	padding-left: 0px;
+}
+/* line 303, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row .member {
+	border-radius: 6px;
+	background-color: #e6e6e6;
+	box-shadow: -2.5px 2.33px 19px -3px #171717;
+	min-height: 500px;
+	max-width: 434px;
+	padding-top: 27px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+/* line 314, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row .member h2 {
+	color: #00557e;
+	font-size: 22px;
+	font-family: 'Gotham-Medium';
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+/* line 322, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row .member h2 span {
+	font-size: 18px;
+	color: #ef5d00;
+}
+/* line 328, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row .member p {
+	text-align: left;
+	font-family: 'Gotham-Medium';
+	font-size: 15px;
+	color: #3d3d3d;
+	padding: 0px 30px 20px 30px;
+}
+/* line 336, ../sass/main.scss */
+.subscription-section .row .col-md-12 .row .member a button {
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	width: 151px;
+	height: 39px;
+	border: 0;
+	color: #fff;
+	font-family: 'Gotham-Book';
+}
+.subscription-section .row .col-md-12 .row .member a button:hover {
+	color: #00557e;
+	background-color: #fff;
+}
+/* line 354, ../sass/main.scss */
+.popular-section .popular-h {
+	min-height: 635px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 133px;
+	padding-right: 112px;
+}
+/* line 361, ../sass/main.scss */
+.popular-section .popular-h .popular-category {
+	padding-top: 58px;
+	margin: 0 auto;
+}
+/* line 366, ../sass/main.scss */
+.popular-section .popular-h .popular-category a button {
+	border: 0;
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	min-width: 135px;
+	min-height: 38px;
+	font-size: 13px;
+	font-family: "Gotham-Medium";
+	color: #00557e;
+}
+.popular-section .popular-h .popular-category a button:hover {
+	background-color: #00557e;
+	color: #e6e6e6;
+}
+/* line 379, ../sass/main.scss */
+.popular-section .popular-h .popular-category h2 {
+	font-size: 30px;
+	font-family: "CoolveticaRg-Regular";
+	background: -webkit-linear-gradient(#cfcfcf, #fefefe, #f0f0f0);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* line 387, ../sass/main.scss */
+.popular-section .popular-h .popular-category .row {
+	padding-top: 60px;
+}
+/* line 390, ../sass/main.scss */
+.popular-section .popular-h .popular-category .row .img-holder {
+	height: 385px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0;
+}
+/* line 400, ../sass/main.scss */
+.popular-section .popular-h .popular-category .row .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	height: 100%;
+	width: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 412, ../sass/main.scss */
+.popular-section .popular-h .popular-category .row h3 {
+	font-family: "Gotham-Medium";
+	color: #fff;
+	padding-top: 9px;
+}
+/* line 419, ../sass/main.scss */
+.popular-section .popular-h .popular-category .row p {
+	font-size: 15px;
+	font-family: "Gotham-Medium";
+	color: #fff;
+	padding-top: 5px;
+}
+/* line 430, ../sass/main.scss */
+.popular-section .popular-h2 {
+	min-height: 635px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 133px;
+	padding-right: 112px;
+}
+/* line 437, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category {
+	padding-top: 58px;
+	margin: 0 auto;
+}
+/* line 442, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category a button {
+	border: 0;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	min-width: 135px;
+	min-height: 38px;
+	font-size: 13px;
+	font-family: "Gotham-Medium";
+	color: #e6e6e6;
+}
+.popular-section .popular-h2 .popular-category a button:hover {
+	background-color: #e6e6e6;
+	color: #00557e;
+}
+/* line 455, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category h2 {
+	font-size: 30px;
+	font-family: "CoolveticaRg-Regular";
+	background: -webkit-linear-gradient(#262626, #737373, #666666);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* line 463, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category .row {
+	padding-top: 60px;
+}
+/* line 466, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category .row .img-holder {
+	height: 385px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0;
+}
+/* line 476, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category .row .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	height: 100%;
+	width: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 488, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category .row h3 {
+	font-family: "Gotham-Medium";
+	color: #3c3c3c;
+	padding-top: 9px;
+}
+/* line 495, ../sass/main.scss */
+.popular-section .popular-h2 .popular-category .row p {
+	font-size: 15px;
+	font-family: "Gotham-Medium";
+	color: #636363;
+	padding-top: 5px;
+}
+/* line 508, ../sass/main.scss */
+.latest-banner {
+	min-height: 118px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 40px;
+}
+/* line 515, ../sass/main.scss */
+.latest-banner h2 {
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 50px;
+	background: -webkit-linear-gradient(#d0d0d0, #fff, #d0d0d0);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	min-height: 60px;
+	padding-bottom: 20px;
+}
+/* line 524, ../sass/main.scss */
+.search-latest-section {
+	min-height: 525px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 34px !important;
+	margin: 0 auto;
+}
+/* line 532, ../sass/main.scss */
+.search-latest-section a button {
+	font-size: 13px;
+	font-family: "Gotham-Book";
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	width: 134px;
+	height: 38px;
+	background-color: #01789b;
+	color: #fff;
+	margin-right: 25px;
+}
+/* line 546, ../sass/main.scss */
+.search-latest-section .form {
+	margin: 0 auto;
+	padding-top: 23px;
+	display: flex;
+	justify-content: center;
+}
+/* line 552, ../sass/main.scss */
+.search-latest-section .form input {
+	border-radius: 4px 0px 0px 4px;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	width: 510px;
+	height: 31px;
+	padding: 16px;
+	border: 0;
+	font-family: 'Gotham-Light';
+	color: #636363;
+}
+/* line 562, ../sass/main.scss */
+.search-latest-section .form button {
+	background-color: #00557e;
+	width: 32px;
+	height: 31px;
+	border: 0;
+	position: absolute;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	color: #fff;
+	position: relative;
+}
+/* line 575, ../sass/main.scss */
+.latest-movie-holder {
+	padding-top: 63px;
+	padding-bottom: 60px;
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* line 582, ../sass/main.scss */
+.latest-movie-holder .img-holder {
+	height: 385px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0 auto;
+	display: block;
+}
+/* line 593, ../sass/main.scss */
+.latest-movie-holder .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 605, ../sass/main.scss */
+.latest-movie-holder h2 {
+	font-size: 17px;
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	padding-top: 12px;
+}
+/* line 613, ../sass/main.scss */
+.latest-movie-holder p {
+	color: #3d3d3d;
+	font-size: 15px;
+	font-family: "Gotham-Book";
+	padding-top: 6px;
+}
+/* line 622, ../sass/main.scss */
+.latest-mid-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 506px;
+	padding-bottom: 20px;
+}
+/* line 628, ../sass/main.scss */
+.latest-mid-section .latest-movie-holder2 {
+	padding-top: 63px;
+	padding-bottom: 60px;
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* line 635, ../sass/main.scss */
+.latest-mid-section .latest-movie-holder2 .img-holder {
+	height: 385px;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0 auto;
+	display: block;
+}
+/* line 646, ../sass/main.scss */
+.latest-mid-section .latest-movie-holder2 .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 658, ../sass/main.scss */
+.latest-mid-section .latest-movie-holder2 h2 {
+	font-size: 17px;
+	font-family: "Gotham-Medium";
+	color: #fff;
+	padding-top: 12px;
+}
+/* line 666, ../sass/main.scss */
+.latest-mid-section .latest-movie-holder2 p {
+	color: #fff;
+	font-size: 15px;
+	font-family: "Gotham-Book";
+	padding-top: 6px;
+}
+/* line 676, ../sass/main.scss */
+.pagination-section {
+	min-height: 586px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 506px;
+	padding-bottom: 60px;
+}
+/* line 685, ../sass/main.scss */
+.pagination-section .page-holder ul {
+	display: flex;
+	justify-content: center;
+}
+/* line 689, ../sass/main.scss */
+.pagination-section .page-holder ul li {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+}
+/* line 696, ../sass/main.scss */
+.pagination-section .page-holder ul li a {
+	font-family: 'Gotham-Light';
+	font-size: 12px;
+	color: #3d3d3d;
+}
+/* line 703, ../sass/main.scss */
+.pagination-section .page-holder ul .active {
+	background-color: #00557e;
+}
+/* line 706, ../sass/main.scss */
+.pagination-section .page-holder ul .active a {
+	color: #fff;
+}
+/* line 712, ../sass/main.scss */
+.pagination-section .page-holder ul .inactive a {
+	color: #aeaeae;
+}
+/* line 721, ../sass/main.scss */
+.books-banner {
+	min-height: 118px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 40px;
+}
+/* line 728, ../sass/main.scss */
+.books-banner h2 {
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 50px;
+	background: -webkit-linear-gradient(#d0d0d0, #fff, #d0d0d0);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* line 737, ../sass/main.scss */
+.search-books-section {
+	min-height: 660px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 37px;
+	padding-bottom: 40px;
+	margin: 0 auto;
+}
+/* line 745, ../sass/main.scss */
+.search-books-section .form {
+	margin: 0 auto;
+	padding-top: 23px;
+	display: flex;
+	justify-content: center;
+}
+/* line 751, ../sass/main.scss */
+.search-books-section .form input {
+	border-radius: 4px 0px 0px 4px;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	width: 551px;
+	height: 31px;
+	padding: 16px;
+	border: 0;
+	font-family: 'Gotham-Light';
+	color: #636363;
+}
+/* line 761, ../sass/main.scss */
+.search-books-section .form button {
+	background-color: #00557e;
+	width: 32px;
+	height: 31px;
+	border: 0;
+	position: absolute;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	color: #fff;
+	position: relative;
+}
+/* line 774, ../sass/main.scss */
+.book-holder {
+	padding-top: 63px;
+	padding-bottom: 20px;
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* line 781, ../sass/main.scss */
+.book-holder .img-holder {
+	max-height: 385px;
+	max-width: 266px;
+	min-height: 385px;
+	min-width: 266px;
+	padding: 16px 13px 18px 13px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0 auto;
+	display: block;
+}
+/* line 792, ../sass/main.scss */
+.book-holder .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	max-height: 351px;
+	max-width: 240px;
+	min-height: 351px;
+	min-width: 240px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 804, ../sass/main.scss */
+.book-holder h2 {
+	font-size: 17px;
+	font-family: "Gotham-Medium";
+	color: #3d3d3d;
+	padding-top: 12px;
+}
+/* line 812, ../sass/main.scss */
+.book-holder p {
+	color: #3d3d3d;
+	font-size: 15px;
+	font-family: "Gotham-Book";
+	padding-top: 6px;
+}
+/* line 821, ../sass/main.scss */
+.book-mid-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 506px;
+	padding-bottom: 20px;
+}
+/* line 827, ../sass/main.scss */
+.book-mid-section .book-holder2 {
+	padding-top: 63px;
+	padding-bottom: 60px;
+	text-align: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* line 834, ../sass/main.scss */
+.book-mid-section .book-holder2 .img-holder {
+	max-height: 385px;
+	max-width: 266px;
+	min-height: 385px;
+	min-width: 266px;
+	padding: 16px 13px 18px 13px;
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	margin: 0 auto;
+	display: block;
+}
+/* line 845, ../sass/main.scss */
+.book-mid-section .book-holder2 .img-holder .shadow-inset {
+	box-shadow: 0px 0px 15px 0px #fff inset;
+	max-height: 351px;
+	max-width: 240px;
+	min-height: 351px;
+	min-width: 240px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* line 857, ../sass/main.scss */
+.book-mid-section .book-holder2 h2 {
+	font-size: 17px;
+	font-family: "Gotham-Medium";
+	color: #fff;
+	padding-top: 12px;
+}
+/* line 865, ../sass/main.scss */
+.book-mid-section .book-holder2 p {
+	color: #fff;
+	font-size: 15px;
+	font-family: "Gotham-Book";
+	padding-top: 6px;
+}
+/* line 875, ../sass/main.scss */
+.pagination-book {
+	min-height: 586px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 506px;
+	padding-bottom: 20px;
+}
+/* line 884, ../sass/main.scss */
+.pagination-book .page-holder ul {
+	display: flex;
+	justify-content: center;
+}
+/* line 888, ../sass/main.scss */
+.pagination-book .page-holder ul li {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+}
+/* line 895, ../sass/main.scss */
+.pagination-book .page-holder ul li a {
+	font-family: 'Gotham-Light';
+	font-size: 12px;
+	color: #3d3d3d;
+}
+/* line 902, ../sass/main.scss */
+.pagination-book .page-holder ul .active {
+	background-color: #00557e;
+}
+/* line 905, ../sass/main.scss */
+.pagination-book .page-holder ul .active a {
+	color: #fff;
+}
+/* line 911, ../sass/main.scss */
+.pagination-book .page-holder ul .inactive a {
+	color: #aeaeae;
+}
+.sidebar-bg {
+	background-color: #fff;
+	text-align: left;
+}
+.sidebar-bg h2 {
+	font-family: 'Gotham-Book';
+	font-size: 12px;
+	color: #2d2d2d;
+	padding: 10px;
+}
+.sidebar-bg span {
+	font-size: 20px;
+	color: #2d2d2d;
+}
+.sidebar-bg h3 {
+	font-size: 15px;
+	font-family: 'Gotham-Book';
+	color: #fff;
+}
+.sidebar-bg .h3-bg {
+	background-color: #2d2d2d;
+	min-height: 30px;
+	padding: 10px;
+}
+.sidebar-bg .sched-bg {
+	padding: 10px;
+	padding-bottom: 5px;
+}
+.sidebar-bg .sched-bg .row .col-md-4 h3 {
+	color: #2d2d2d;
+	font-size: 13px;
+	font-family: 'Gotham-Book';
+}
+.sidebar-bg .sched-bg .row .col-md-4 span {
+	color: #00557e;
+	font-size: 13px;
+	font-family: 'Gotham-Book';
+}
+.sidebar-bg .sched-bg .row .col-md-8 h4 {
+	color: #00557e;
+	font-size: 16px;
+	font-family: 'Gotham-Book';
+	margin-bottom: 7px;
+}
+.sidebar-bg .sched-bg .row .col-md-8 h4 span {
+	font-size: 13px;
+}
+.sidebar-bg .sched-bg .row .col-md-8 span {
+	color: #00557e;
+	font-size: 13px;
+	font-family: 'Gotham-Book';
+}
+.editor-bottom {
+	padding-bottom: 50px;
+}
+.sec1-series .sec1-series-content1 {
+	min-height: 578px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sec1-series .sec1-series-content1 .container .row {
+	text-align: center;
+}
+.sec1-series .sec1-series-content1 .container .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #fff;
+}
+.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 .box-shadow-editor {
+	width: 263px;
+	height: 385px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	cursor: pointer;
+}
+.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 .box-shadow-editor img {
+	width: 100%;
+	height: 100%;
+}
+.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 h3 {
+	color: #fff;
+	font-family: 'Gotham-Medium';
+	font-size: 17px;
+	text-align: left;
+}
+.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 h4 {
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	text-align: left;
+}
+.sec1-series .btn-soon-holder {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.sec1-series .btn-soon-holder .btn-coming-soon:hover {
+	background-color: #fff;
+	color: #000;
+}
+.sec1-series .btn-soon-holder .btn-coming-soon {
+	height: 38px;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	color: #ffffff;
+	margin-right: 10px;
+	border-style: none;
+	font-family: 'Gotham-Book';
+	font-size: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* SIDEBAR*/
+#toggle-right-sidebar {
+	float: right;
+	color: #e6e6e6;
+	border: 0;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	font-family: 'Gotham-Book';
+	line-height: 12px;
+	font-size: 12px;
+	width: 150px;
+	height: 38px;
+	font-weight: bold;
+}
+#videotitle {
+	text-align: left;
+	margin-top: -75px;
+}
+#videotitle h2 {
+	font-family: 'Gotham-Medium';
+	font-size: 39px;
+	color: #3d3d3d;
+}
+/*EPISODES*/
+.episodes-holder {
+	background-color: #fff;
+	max-width: 439px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-bottom: 40px;
+	display: none;
+}
+.episodes-holder h2 {
+	font-family: 'Gotham-Book';
+	font-size: 18px;
+	color: #2d2d2d;
+	padding: 10px;
+	text-align: left;
+}
+.episodes-holder .episode-name h3 {
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+.episodes-holder .episode-name {
+	background-color: #2d2d2d
+}
+.episodes-holder .episode-list {
+	padding: 10px;
+	text-align: left;
+}
+.episodes-holder .episode-list li {
+	margin-bottom: 10px;
+	font-family: 'Gotham-Book';
+	font-size: 13px;
+	color: #2d2d2d;
+}
+.episodes-holder .episode-list span {
+	color: #00557e;
+}
+.episodes-holder .episode-list li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.episodes-holder .episodes-arrow {
+	position: relative;
+	float: right;
+	margin-top: 10px;
+}
+.episodes-holder .episodes-arrow li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.episodes-holder .episodes-arrow li:hover {
+	opacity: 0.5;
+}
+.episodes-holder .episodes-arrow .fa {
+	font-size: 20px;
+	font-weight: bold;
+	color: #2d2d2d;
+}
+.sec2-series-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 412px;
+	text-align: center;
+}
+.sec2-series .sec2-series-bg .container .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #fff;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 .box-shadow-cast {
+	background-color: #fff;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	height: 235px;
+	width: 163px;
+	padding: 7px;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 .box-shadow-cast img {
+	height: 100%;
+	width: 100%;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 .box-shadow-cast img:hover {
+	cursor: pointer;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 {
+	margin: 15px 19.51px;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 h2 {
+	padding-top: 15px;
+	font-family: 'Gotham-Light';
+	font-size: 13px;
+	color: #fff;
+	text-align: left;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 h3 {
+	font-family: 'Gotham-Light';
+	font-size: 13px;
+	color: #fff;
+	text-align: left;
+}
+.sec2-series .sec2-series-bg .container .row .sec2-series-content1 span {
+	color: #c8c8c8;
+}
+.sec3-series .sec3-series-content1 {
+	min-height: 500px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row {
+	text-align: center;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #fff;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+	width: 100%;
+	height: 330px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	cursor: pointer;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 .box-shadow-editor img {
+	width: 100%;
+	height: 100%;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 h3 {
+	color: #fff;
+	font-family: 'Gotham-Medium';
+	font-size: 17px;
+	text-align: left;
+}
+.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 h4 {
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	text-align: left;
+}
+.sec3-series .sec3-series-content1 .container .row {
+	text-align: center;
+}
+.sec3-series .sec3-series-content1 .container .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #fff;
+}
+.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+	height: 385px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	cursor: pointer;
+}
+.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 .box-shadow-editor img {
+	width: 100%;
+	height: 100%;
+}
+.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 h3 {
+	color: #fff;
+	font-family: 'Gotham-Medium';
+	font-size: 17px;
+	text-align: left;
+}
+.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 h4 {
+	margin-bottom: 10px;
+	color: #fff;
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	text-align: left;
+}
+.sec4-series .sec4-series-content1 {
+	min-height: 384px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row {
+	text-align: center;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #3d3d3d;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+	width: 100%;
+	height: 330px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	cursor: pointer;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 .box-shadow-editor img {
+	width: 100%;
+	height: 100%;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 h3 {
+	color: #3d3d3d;
+	font-family: 'Gotham-Medium';
+	font-size: 17px;
+	text-align: left;
+}
+.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 h4 {
+	margin-bottom: 10px;
+	color: #3d3d3d;
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	text-align: left;
+}
+.sec4-series .sec4-series-content1 .container .row {
+	text-align: center;
+}
+.sec4-series .sec4-series-content1 .container .row h2 {
+	padding-top: 30px;
+	font-family: 'CoolveticaRg-Regular';
+	font-size: 30px;
+	color: #3d3d3d;
+}
+.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+	height: 385px;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: -3px 4.33px 20px -4px #171717;
+	cursor: pointer;
+}
+.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 .box-shadow-editor img {
+	width: 100%;
+	height: 100%;
+}
+.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 h3 {
+	color: #3d3d3d;
+	font-family: 'Gotham-Medium';
+	font-size: 17px;
+	text-align: left;
+}
+.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 h4 {
+	margin-bottom: 10px;
+	color: #3d3d3d;
+	font-family: 'Gotham-Book';
+	font-size: 15px;
+	text-align: left;
+}
+.view-schedule button {
+	position: absolute;
+	color: #e6e6e6;
+	border: 0;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	font-family: 'Gotham-Book';
+	line-height: 12px;
+	font-size: 12px;
+	width: 200px;
+	height: 38px;
+	font-weight: bold;
+	margin-top: -70px;
+	right: 175px;
+}
+.view-schedule {
+	display: none;
+}
+.sec2-series .owl-carousel .owl-nav {
+	display: block;
+}
+.sec2-series .owl-carousel .owl-nav .owl-prev {
+	position: absolute;
+	left: 49%;
+}
+.sec2-series .owl-carousel .owl-nav .owl-next {
+	position: absolute;
+	right: 49%;
+}
+.sec2-series .owl-carousel .owl-nav .fa {
+	color: #fff;
+}
+.sec2-series .owl-carousel .owl-nav .disabled {
+	opacity: 0.5;
+}
+.center-position,
+.center-position2 {
+	position: relative;
+}
+.search-books-section-edit .form button {
+	background-color: #00557e;
+	width: 32px;
+	height: 31px;
+	border: 0;
+	position: absolute;
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	color: #fff;
+	margin-top: 21px;
+}
+.select-cat select {
+	box-shadow: -1.5px 2.598px 7px -2px #171717;
+	width: 150px;
+	height: 31px;
+	border-left: 1px solid #171717;
+	border-right: 1px solid #171717;
+	border: 0;
+	font-family: 'Gotham-Light';
+	color: #636363;
+	outline: 0;
+	position: absolute;
+	background-color: #01789b;
+	right: 44px;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+}
+.movie-des::-webkit-scrollbar-corner,
+.movie-des::-webkit-scrollbar-track {
+	display: none !important;
+}
+.movie-des::-webkit-scrollbar {
+	width: 8px !important;
+	height: 8px !important;
+}
+.movie-des::-webkit-scrollbar-thumb {
+	background-color: #5ca1c3 !important;
+	border-radius: 6px !important;
+}
+/*SCHEDULE*/
+.sec-schedule {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.sec-schedule .table-btn {
+	width: 50%;
+	background-color: #3d3d3d;
+	border-style: none;
+	height: 98%;
+	outline: 0;
+	border-right: 2px solid #575757;
+}
+.table-btn:hover {
+	opacity: .5;
+}
+.sec-schedule .container .row .col-md-10 table {
+	width: 100%;
+}
+.sec-schedule .container .row .col-md-10 table>thead>tr>th.btn-table {
+	padding-right: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+	height: 40px;
+	background-color: #2d2d2d;
+	color: #fff;
+	font-family: 'Gotham-Medium';
+	font-size: 15px;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	padding-left: 15px;
+}
+.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+	padding: 10px;
+	font-family: 'Gotham-Light';
+	font-size: 13px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+	color: #00557e;
+	padding: 10px;
+	font-family: 'Gotham-Light';
+	font-size: 13px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.sec-schedule .container .row .col-md-10 td>a:hover {
+	text-decoration: underline;
+}
+.sec-schedule .container .row .col-md-2 .sched-input {
+	margin-top: 10px;
+}
+.sec-schedule .container .row .col-md-2 .sched-input h2 {
+	font-family: 'Gotham-Book';
+	font-size: 17px;
+}
+.sec-schedule .container .row .col-md-2 .sched-input input {
+	outline: 0;
+	height: 34px;
+	padding: 5px;
+	width: 175px;
+	font-family: 'Gotham-Light';
+	font-size: 17px;
+	border: 2px solid #000;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.sec-schedule .container .row .col-md-2 .sched-input select {
+	outline: 0;
+	height: 34px;
+	padding: 5px;
+	width: 175px;
+	font-family: 'Gotham-Light';
+	font-size: 17px;
+	border: 2px solid #000;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.sec-schedule .container .row .col-md-2 .sched-input2 select {
+	outline: 0;
+	height: 34px;
+	padding: 5px;
+	width: 175px;
+	font-family: 'Gotham-Light';
+	font-size: 17px;
+	border: 2px solid #fff;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #bbbbbb;
+	color: #868383;
+}
+.season-tag {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	height: 100px;
+	width: 70px;
+	background: #fff;
+	color: #3d3d3d;
+}
+.season-tag ul {
+	box-shadow: 0px 0px 10px 2px #000000;
+	padding: 4px;
+	width: 100%;
+	font-family: 'Gotham-Medium';
+	height: 100%;
+}
+.season-tag ul li {
+	padding: 2px;
+}
+.season-tag ul li:nth-child(2) {
+	border-top: 1px solid #afc9d5;
+	border-bottom: 1px solid #afc9d5;
+	font-size: 34px;
+	color: #04547b;
+	padding: 8px
+}
+.sec3-series .sec3-series-content1 a button {
+	border: 0;
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	min-width: 135px;
+	min-height: 38px;
+	font-size: 13px;
+	font-family: "Gotham-Medium";
+	color: #00557e;
+}
+.sec4-series .sec4-series-content1 a button {
+	border: 0;
+	border-radius: 4px;
+	background-color: #00557e;
+	box-shadow: 1.5px 2.598px 3px 0px #171717;
+	min-width: 135px;
+	min-height: 38px;
+	font-size: 13px;
+	font-family: "Gotham-Medium";
+	color: #e6e6e6;
+}
+.sec4-series .sec4-series-content1 a button:hover {
+	background-color: #e6e6e6;
+	color: #00557e;
+}
+.sec3-series .sec3-series-content1 a button:hover {
+	background-color: #00557e;
+	color: #e6e6e6;
+}
+.footer .container .form form input {
+	max-width: 100%
+}
+form {
+	max-width: 100%;
+}
+.search-books-section-edit .form input {
+	width: 324px;
+	height: 31px;
+	margin-top: 22px !important;
+	max-width: 100%;
+}
+@media (max-width: 2560px) {
+	.sec3-series .sec3-series-content1 .container-fluid {
+		width: 1170px;
+	}
+	.sec4-series .sec4-series-content1 .container-fluid {
+		width: 1170px;
+	}
+	.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		width: 265px;
+	}
+	.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		width: 265px;
+	}
+}
+@media (max-width: 1440px) {
+	.navi-holder .logo-holder img {
+		padding-left: 3vw;
+	}
+	.sec3-series .sec3-series-content1 .container-fluid {
+		width: unset;
+	}
+	.sec4-series .sec4-series-content1 .container-fluid {
+		width: unset;
+	}
+	.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		width: 100%;
+	}
+	.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		width: 100%;
+	}
+}
+@media(max-width: 1280px) {
+	.navi-holder .logo-holder img {
+		padding-left: 2vw;
+	}
+	.popular-section .popular-h {
+		padding-left: 0;
+		padding-right: 0px;
+	}
+	.popular-section .popular-h2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (min-width: 1201px) {
+	.popular-section .popular-h .popular-category h2 {
+		padding-left: 20px !important;
+	}
+	.popular-section .popular-h2 .popular-category h2 {
+		padding-left: 20px !important;
+	}
+	.popular-section .popular-h2 .popular-category h2 {
+		padding-left: 20px !important;
+	}
+	.popular-category .pull-right {
+		padding-right: 20px !important;
+	}
+}
+@media (max-width: 1201px) and (min-width: 992px) {
+	.col-md-12 .col-md-6 {
+		width: 50% !important;
+		display: inline-block;
+		padding-right: 8px !important;
+		padding-left: 8px !important;
+	}
+}
+@media (max-width: 1200px) {
+	.col-md-6 {
+		width: 100%;
+	}
+	.season-num-pos {
+		font-size: 20px;
+	}
+	.num-pos h3 {
+		text-align: center !important;
+		margin-bottom: 10px;
+	}
+	.episode-num {
+		font-family: "Gotham-Light";
+		font-size: 20px;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 18.88px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 24px;
+	}
+	.movie-title h3 {
+		font-family: "Gotham-Medium";
+		color: #3d3d3d;
+		font-size: 20.5px;
+		text-align: left;
+		line-height: 19px;
+		margin-top: 0px;
+	}
+	.movie-holder {
+		max-width: 728px;
+		min-height: 392px;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	/* line 929, ../sass/main.scss */
+	.home-banner {
+		min-height: 500px;
+		max-height: 500px;
+	}
+	/* line 932, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-left: 100px;
+		padding-top: 150px;
+	}
+	/* line 939, ../sass/main.scss */
+	.navi-holder .right-bar {
+		padding-right: 30px;
+	}
+	/* line 953, ../sass/main.scss */
+	.popular-section .popular-h {
+		min-height: 635px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	/* line 960, ../sass/main.scss */
+	.popular-section .popular-h .popular-category {
+		padding-top: 58px;
+		margin: 0 auto;
+	}
+	/* line 965, ../sass/main.scss */
+	.popular-section .popular-h .popular-category a button {
+		border: 0;
+		border-radius: 4px;
+		background-color: #e6e6e6;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		min-width: 135px;
+		min-height: 38px;
+		font-size: 13px;
+		font-family: "Gotham-Medium";
+		color: #00557e;
+	}
+	/* line 978, ../sass/main.scss */
+	.popular-section .popular-h .popular-category h2 {
+		font-size: 30px;
+		font-family: "CoolveticaRg-Regular";
+		background: -webkit-linear-gradient(#cfcfcf, #fefefe, #f0f0f0);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	/* line 986, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row {
+		padding-top: 60px;
+	}
+	/* line 989, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder {
+		height: 385px;
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0;
+	}
+	/* line 999, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		height: 100%;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	/* line 1011, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row h3 {
+		font-family: "Gotham-Medium";
+		color: #fff;
+		padding-top: 9px;
+	}
+	/* line 1018, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row p {
+		font-size: 15px;
+		font-family: "Gotham-Medium";
+		color: #fff;
+		padding-top: 5px;
+	}
+	/* line 1029, ../sass/main.scss */
+	.popular-section .popular-h2 {
+		min-height: 635px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	/* line 1036, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category {
+		padding-top: 58px;
+		margin: 0 auto;
+	}
+	/* line 1041, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category a button {
+		border: 0;
+		border-radius: 4px;
+		background-color: #00557e;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		min-width: 135px;
+		min-height: 38px;
+		font-size: 13px;
+		font-family: "Gotham-Medium";
+		color: #e6e6e6;
+	}
+	/* line 1054, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category h2 {
+		font-size: 30px;
+		font-family: "CoolveticaRg-Regular";
+		background: -webkit-linear-gradient(#262626, #737373, #666666);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	/* line 1062, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row {
+		padding-top: 60px;
+	}
+	/* line 1065, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder {
+		height: 385px;
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0;
+	}
+	/* line 1075, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		height: 100%;
+		width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	/* line 1087, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row h3 {
+		font-family: "Gotham-Medium";
+		color: #3c3c3c;
+		padding-top: 9px;
+	}
+	/* line 1094, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row p {
+		font-size: 15px;
+		font-family: "Gotham-Medium";
+		color: #636363;
+		padding-top: 5px;
+	}
+	.popular-section .popular-h2 .popular-category .row .img-holder {
+		height: 350px !important;
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0;
+	}
+	.popular-section .popular-h .popular-category .row .img-holder {
+		height: 350px !important;
+		width: 100%;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0;
+	}
+}
+@media (max-width: 1199px) and (min-width: 1023px) {
+	.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		height: 313px;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		background-color: #fff;
+		padding: 10px;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		cursor: pointer;
+	}
+	.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		height: 313px;
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 10px;
+		background-color: #fff;
+		padding: 10px;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		cursor: pointer;
+	}
+}
+@media(max-width: 1150px) {
+	.subscription-section .row .col-md-12 .row .member {
+		margin-bottom: 10vh;
+	}
+}
+@media (max-width: 1105px) and (min-width: 1041px) {
+	.navi-holder .right-bar ul li a {
+		font-family: 'Gotham-Book';
+		line-height: 12px;
+		font-size: 12px;
+		color: #3d3d3d;
+		font-weight: bold;
+		letter-spacing: 0px;
+	}
+	.navi-holder .right-bar ul {
+		background-color: transparent;
+		/* padding-bottom: 20px; */
+		margin-top: 0;
+	}
+}
+@media (max-width: 1061px) and (min-width: 1041px) {
+	.navi-holder .right-bar ul {
+		background-color: transparent;
+		/* padding-bottom: 20px; */
+		margin-top: -27px;
+	}
+}
+@media (max-width: 1040px) {
+	.season-num-pos {
+		margin-top: 13px;
+		margin-bottom: 26px;
+		margin-left: -294px;
+	}
+	.movie-title h3 {
+		font-family: "Gotham-Medium";
+		color: #3d3d3d;
+		font-size: 12.5px;
+		text-align: left;
+		line-height: 12px;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 18.68px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 24px;
+	}
+	.movie-holder {
+		max-width: 728px;
+		min-height: 392px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.col-md-6 {
+		width: 100%;
+	}
+	.num-pos {
+		font-size: 20px;
+	}
+	.episode-num {
+		font-family: "Gotham-Light";
+		font-size: 20px;
+	}
+	.num-pos h3 {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	/* line 1108, ../sass/main.scss */
+	.home-banner {
+		min-height: 500px;
+		max-height: 500px;
+	}
+	/* line 1112, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 150px;
+	}
+	/* line 1120, ../sass/main.scss */
+	.navi-holder {
+		height: 82px !important;
+	}
+	/* line 1123, ../sass/main.scss */
+	.navi-holder .logo-holder img {
+		padding-left: 0px;
+		max-width: 287px;
+	}
+	/* line 1126, ../sass/main.scss */
+	.navi-holder .right-bar {
+		padding-right: 30px;
+	}
+	/* line 1129, ../sass/main.scss */
+	.navi-holder .right-bar .btn-login {
+		width: 90px;
+		height: 38px;
+		border-radius: 4px;
+		background-color: #00557e;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #fff;
+		margin-right: 10px;
+	}
+	/* line 1139, ../sass/main.scss */
+	.navi-holder .right-bar .btn-signup {
+		width: 90px;
+		height: 38px;
+		border-radius: 4px;
+		background-color: #e6e6e6;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #00557e;
+	}
+	/* line 1160, ../sass/main.scss */
+	.subscription-section .row .col-md-12 {
+		text-align: center;
+	}
+	/* line 1163, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row {
+		padding-right: 0px;
+	}
+	/* line 1166, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member {
+		max-width: 400px;
+		padding-left: 10px;
+	}
+	/* line 1169, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member p {
+		padding: 0px 30px 30px 30px;
+	}
+	/* line 1180, ../sass/main.scss */
+	.popular-section .popular-h {
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+	/* line 1186, ../sass/main.scss */
+	.popular-section .popular-h .popular-category h2 {
+		padding-left: 50px;
+	}
+	/* line 1192, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder {
+		height: 308px;
+	}
+	/* line 1209, ../sass/main.scss */
+	.popular-section .popular-h2 {
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+	/* line 1215, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category h2 {
+		padding-left: 50px;
+	}
+	/* line 1221, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder {
+		height: 308px;
+	}
+	/* line 1241, ../sass/main.scss */
+	.search-latest-section .form {
+		margin: 0 auto;
+		padding-top: 23px;
+		display: flex;
+		justify-content: center;
+	}
+	/* line 1247, ../sass/main.scss */
+	.search-latest-section .form button {
+		height: 33px;
+	}
+	/* line 1255, ../sass/main.scss */
+	.latest-movie-holder .img-holder {
+		max-height: 370px;
+		max-width: 240px;
+		min-height: 370px;
+		min-width: 240px;
+		cursor: pointer;
+	}
+	/* line 1262, ../sass/main.scss */
+	.latest-movie-holder .img-holder .shadow-inset {
+		max-height: 336px;
+		max-width: 214px;
+		min-height: 336;
+		min-width: 214px;
+	}
+	/* line 1275, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder {
+		max-height: 370px;
+		max-width: 240px;
+		min-height: 370px;
+		min-width: 240px;
+	}
+	/* line 1281, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder .shadow-inset {
+		max-height: 336px;
+		max-width: 214px;
+		min-height: 351px;
+		min-width: 214px;
+	}
+	/* line 1293, ../sass/main.scss */
+	.book-holder .img-holder {
+		max-height: 370px;
+		max-width: 240px;
+		min-height: 370px;
+		min-width: 240px;
+	}
+	/* line 1299, ../sass/main.scss */
+	.book-holder .img-holder .shadow-inset {
+		max-height: 336px;
+		max-width: 214px;
+		min-height: 336px;
+		min-width: 214px;
+	}
+	/* line 1312, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder {
+		max-height: 370px;
+		max-width: 240px;
+		min-height: 370px;
+		min-width: 240px;
+	}
+	/* line 1318, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder .shadow-inset {
+		max-height: 336px;
+		max-width: 214px;
+		min-height: 336px;
+		min-width: 214px;
+	}
+}
+@media (max-width: 1024px) {
+	.sec3-series .sec3-series-content1 .container-fluid .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		height: 275px;
+		padding: 5px;
+	}
+	.sec4-series .sec4-series-content1 .container-fluid .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		height: 275px;
+		padding: 7px;
+	}
+	.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		height: 330px;
+		padding: 7.5px;
+	}
+	.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		height: 330px;
+		padding: 7.5px;
+	}
+}
+@media (max-width: 1023px) and (min-width: 993px) {
+	.navi-holder .right-bar ul {
+		background-color: transparent;
+		margin-top: -27px;
+	}
+}
+@media (max-width: 992px) {
+	.navi-holder .right-bar {
+		position: relative;
+		z-index: 1000;
+	}
+	.tv-series-bg .img-holder-tv {
+		height: 563px;
+		padding: 16px 13px 18px 13px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		display: block;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		max-width: 411px;
+		height: 530px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.season-num-pos {
+		margin-top: 13px;
+		margin-bottom: 26px;
+		margin-left: -294px;
+	}
+	.movie-title h3 {
+		font-family: "Gotham-Medium";
+		color: #3d3d3d;
+		font-size: 20.5px;
+		text-align: left;
+		line-height: 19px;
+		margin-top: -10px;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 18.68px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 24px;
+	}
+	.movie-holder {
+		max-width: 728px;
+		min-height: 392px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.col-md-6 {
+		width: 100%;
+	}
+	.episode-num {
+		font-family: "Gotham-Light";
+		font-size: 20px;
+	}
+	.season-num {
+		font-size: 20px;
+	}
+	.num-pos h3 {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	/* line 1330, ../sass/main.scss */
+	.navi-holder .right-bar {
+		padding-top: 21px;
+	}
+	/* line 1333, ../sass/main.scss */
+	.navi-holder .right-bar .btn-login {
+		width: 85px;
+	}
+	/* line 1337, ../sass/main.scss */
+	.navi-holder .right-bar .btn-signup {
+		width: 85px;
+	}
+	/* line 1341, ../sass/main.scss */
+	.navi-holder .right-bar ul li {
+		margin: 0 auto;
+	}
+	/* line 1343, ../sass/main.scss */
+	.navi-holder .right-bar ul li a {
+		font-family: 'Gotham-Book';
+		line-height: 12px;
+		font-size: 12px;
+		color: #3d3d3d;
+		font-weight: bold;
+		letter-spacing: 0;
+	}
+	/* line 1354, ../sass/main.scss */
+	.search-latest-section {
+		padding-left: 0;
+	}
+	/* line 1358, ../sass/main.scss */
+	.popular-section {
+		padding-left: 0;
+	}
+	/* line 1365, ../sass/main.scss */
+	.popular-section .popular-h .popular-category h2 {
+		padding-left: 40px;
+	}
+	/* line 1371, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1377, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder .shadow-inset {
+		height: 100%;
+		width: 100%;
+	}
+	/* line 1392, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category h2 {
+		padding-left: 40px;
+	}
+	/* line 1398, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1404, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder .shadow-inset {
+		height: 100%;
+		width: 100%;
+	}
+	/* line 1416, ../sass/main.scss */
+	.latest-movie-holder {
+		padding-left: 0;
+	}
+	/* line 1419, ../sass/main.scss */
+	.latest-movie-holder .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		cursor: pointer;
+	}
+	/* line 1426, ../sass/main.scss */
+	.latest-movie-holder .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326;
+		min-width: 204px;
+	}
+	/* line 1435, ../sass/main.scss */
+	.latest-mid-section {
+		padding-left: 0;
+	}
+	/* line 1440, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1446, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1456, ../sass/main.scss */
+	.search-books-section {
+		padding-left: 0;
+	}
+	/* line 1462, ../sass/main.scss */
+	.book-holder .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1468, ../sass/main.scss */
+	.book-holder .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1477, ../sass/main.scss */
+	.book-mid-section {
+		padding-left: 0;
+	}
+	/* line 1482, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1488, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1498, ../sass/main.scss */
+	.home-banner {
+		min-height: 450px;
+		max-height: 450px;
+	}
+	/* line 1502, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 100px;
+		padding-left: 50px;
+	}
+}
+@media (max-width: 991px) {
+	.center-position {
+		margin: 0 auto;
+		width: 163px;
+	}
+	.center-position h2 {
+		text-align: center !important;
+	}
+	.center-position h3 {
+		text-align: center !important;
+	}
+	.cast-arrow {
+		padding-bottom: 20px;
+	}
+	.center-position2 {
+		margin: 0 auto;
+		width: 263px;
+	}
+	.center-position2 h4 {
+		text-align: center !important;
+	}
+	.center-position2 h3 {
+		text-align: center !important;
+	}
+	#toggle-sidebar {
+		display: none;
+	}
+	#episodesholder {
+		display: block;
+	}
+	.episodes-holder {
+		max-width: 388px;
+	}
+	#sidebar {
+		display: block !important;
+		margin-top: 20px;
+	}
+	.sidebar-bg h2 {
+		font-size: 16px;
+	}
+	.sidebar-bg span {
+		font-size: 30px;
+	}
+	.sidebar-bg h3 {
+		font-size: 16px;
+	}
+	.sidebar-bg .sched-bg .row .col-md-4 h3 {
+		font-size: 16px;
+	}
+	.sidebar-bg .sched-bg .row .col-md-4 span {
+		font-size: 16px;
+	}
+	.sidebar-bg .sched-bg .row .col-md-8 h4 {
+		font-size: 16px;
+	}
+	.sidebar-bg .sched-bg .row .col-md-8 span {
+		font-size: 16px;
+	}
+	.sched-bg .row .col-md-4 {
+		width: 30%;
+		float: left;
+	}
+	.sched-bg .row .col-md-8 {
+		width: 70%;
+		float: right;
+	}
+	.view-schedule button {
+		float: none;
+		margin-top: 0px;
+		position: inherit;
+	}
+	.view-schedule {
+		display: block;
+	}
+	.sec2-series .owl-carousel .owl-nav {
+		margin-top: 10px;
+	}
+	.sec2-series .owl-carousel .owl-nav .owl-prev {
+		position: absolute;
+		left: 48%;
+	}
+	.sec2-series .owl-carousel .owl-nav .owl-next {
+		position: absolute;
+		right: 48%;
+	}
+	.popular-section .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+	}
+	.popular-section .container {
+		width: 100% !important;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		max-width: 411px;
+		height: 530px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.tv-series-bg .img-holder-tv {
+		height: 563px;
+		padding: 16px 13px 18px 13px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		display: block;
+	}
+	.movie-title h2 {
+		font-family: "Gotham-Medium";
+		color: #3d3d3d;
+		font-size: 39px;
+		text-align: left;
+		line-height: 45px;
+	}
+	.movie-play {
+		max-width: 728px;
+		height: 405px !important;
+		width: 100%;
+	}
+	.search-books-section {
+		padding-left: 15px;
+	}
+	.season-num-pos {
+		margin-top: 13px;
+		margin-bottom: 26px;
+		margin-left: -8px;
+		font-size: 20px;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 16.58px;
+		text-align: left;
+		line-height: 24px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		font-size: 21px;
+	}
+	.movie-title h3 {
+		text-align: left;
+		line-height: 19px;
+		font-size: 22.5px;
+		margin-top: 0;
+	}
+	.movie-holder {
+		margin-top: 10px;
+	}
+	.search-books-section {
+		padding-left: 15px;
+	}
+	.num-pos h3 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	/* line 1514, ../sass/main.scss */
+	.subscription-section {
+		min-height: 1028px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-bottom: 50px;
+	}
+	/* line 1522, ../sass/main.scss */
+	.subscription-section .row .hand-image {
+		position: absolute;
+		padding-top: 300px;
+		margin-left: -20px;
+	}
+	/* line 1527, ../sass/main.scss */
+	.subscription-section .row .left-margin-hand {
+		margin-left: 400px;
+	}
+	/* line 1530, ../sass/main.scss */
+	.subscription-section .row .col-md-12 {
+		text-align: center;
+	}
+	/* line 1533, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .plans-header {
+		font-family: 'CoolveticaRg-Regular';
+		font-size: 53px;
+		background: -webkit-linear-gradient(#0d0d0d, #5f5c5c, #444444);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	/* line 1543, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row {
+		padding-left: 0px;
+	}
+	/* line 1546, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member {
+		border-radius: 6px;
+		background-color: #e6e6e6;
+		box-shadow: -2.5px 2.33px 19px -3px #171717;
+		min-height: 903px;
+		max-width: 434px;
+		padding-top: 27px;
+		padding-bottom: 30px;
+		padding-left: 50px;
+		padding-right: 10px;
+		margin-bottom: 50px;
+	}
+	/* line 1558, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member h2 {
+		color: #00557e;
+		font-size: 22px;
+		font-family: 'Gotham-Medium';
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	/* line 1567, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member p {
+		text-align: left;
+		font-family: 'Gotham-Medium';
+		font-size: 14px;
+		color: #3d3d3d;
+	}
+	/* line 1575, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member a button {
+		border-radius: 4px;
+		background-color: #00557e;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		width: 151px;
+		height: 39px;
+		border: 0;
+		color: #fff;
+		font-family: 'Gotham-Book';
+	}
+	/* line 1595, ../sass/main.scss */
+	.popular-section .popular-h .popular-category {
+		text-align: center;
+	}
+	/* line 1600, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder {
+		margin: 0 auto;
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+	}
+	/* line 1607, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row .img-holder .shadow-inset {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	/* line 1616, ../sass/main.scss */
+	.popular-section .popular-h .popular-category .row p {
+		margin-bottom: 30px;
+	}
+	/* line 1625, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category {
+		margin: 0 auto;
+		text-align: center;
+	}
+	/* line 1632, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		margin: 0 auto;
+	}
+	/* line 1639, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row .img-holder .shadow-inset {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	/* line 1648, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category .row p {
+		margin-bottom: 30px;
+	}
+	/* line 1656, ../sass/main.scss */
+	.latest-movie-holder {
+		padding-top: 63px;
+		padding-bottom: 60px;
+		text-align: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/* line 1663, ../sass/main.scss */
+	.latest-movie-holder .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		margin: 0 auto;
+	}
+	/* line 1670, ../sass/main.scss */
+	.latest-movie-holder .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1678, ../sass/main.scss */
+	.latest-movie-holder h2 {
+		text-align: center;
+	}
+	/* line 1682, ../sass/main.scss */
+	.latest-movie-holder p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	/* line 1688, ../sass/main.scss */
+	.latest-mid-section {
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 506px;
+		padding-bottom: 20px;
+	}
+	/* line 1694, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 {
+		padding-top: 63px;
+		padding-bottom: 60px;
+		text-align: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/* line 1701, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		margin: 0 auto;
+	}
+	/* line 1708, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1716, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 h2 {
+		text-align: center;
+	}
+	/* line 1720, ../sass/main.scss */
+	.latest-mid-section .latest-movie-holder2 p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	/* line 1727, ../sass/main.scss */
+	.book-holder {
+		text-align: center;
+	}
+	/* line 1730, ../sass/main.scss */
+	.book-holder .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		margin: 0 auto;
+	}
+	/* line 1737, ../sass/main.scss */
+	.book-holder .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1745, ../sass/main.scss */
+	.book-holder p {
+		margin-bottom: 20px;
+	}
+	/* line 1752, ../sass/main.scss */
+	.book-mid-section .book-holder2 {
+		text-align: center;
+	}
+	/* line 1755, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder {
+		max-height: 360px;
+		max-width: 230px;
+		min-height: 360px;
+		min-width: 230px;
+		margin: 0 auto;
+	}
+	/* line 1762, ../sass/main.scss */
+	.book-mid-section .book-holder2 .img-holder .shadow-inset {
+		max-height: 326px;
+		max-width: 204px;
+		min-height: 326px;
+		min-width: 204px;
+	}
+	/* line 1770, ../sass/main.scss */
+	.book-mid-section .book-holder2 p {
+		margin-bottom: 20px;
+	}
+	/* line 1776, ../sass/main.scss */
+	.home-content {
+		background-position: center;
+		min-height: 600px;
+		max-height: 600px;
+	}
+	/* line 1782, ../sass/main.scss */
+	.home-content .banner-content {
+		padding-left: 0px;
+	}
+	.popular-section .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+	}
+	.popular-section .container {
+		width: 100% !important;
+	}
+	.sec3-series .container {
+		width: 100% !important;
+	}
+	.sec3-series .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+		vertical-align: top !important;
+	}
+	.sec4-series .container {
+		width: 100% !important;
+	}
+	.sec4-series .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+		vertical-align: top !important;
+	}
+	.popular-section .popular-h .popular-category .row h3 {
+		font-family: "Gotham-Medium";
+		color: #fff;
+		padding-top: 9px;
+		font-size: 13px;
+	}
+	.popular-section .popular-h2 .popular-category .row h3 {
+		font-family: "Gotham-Medium";
+		color: #3c3c3c;
+		padding-top: 9px;
+		font-size: 13px;
+	}
+	#videotitle h2 {
+		font-family: 'Gotham-Medium';
+		font-size: 39px;
+		color: #3d3d3d;
+		display: none;
+	}
+	#episodesholder {
+		display: block !important;
+	}
+	#toggle-right-sidebar {
+		display: none !important;
+	}
+	#content-inner .container-fluid {
+		padding-right: 0px !important;
+	}
+	#sidebar {
+		display: block !important;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 991px) and (min-width: 842px) {
+	.popular-category .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+		vertical-align: top !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.popular-category .container {
+		width: 100% !important;
+	}
+	/*.popular-section .popular-h .popular-category .row .img-holder {margin: 0 auto; max-height: 360px; max-width: 180px; min-height: 257px; min-width: 180px; }
+*/
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.sec3-series .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+		vertical-align: top !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.sec3-series .sec3-series-content1 .container .row .sec3-series-content2 .col-md-3 .box-shadow-editor {
+		height: 275px;
+		padding: 7.5px;
+	}
+	.center-position2 {
+		margin: 0 auto;
+		width: 179px !important;
+	}
+	.sec4-series .col-md-3 {
+		display: inline-block !important;
+		position: relative !important;
+		vertical-align: top !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.sec4-series .container {
+		width: 100% !important;
+	}
+	.sec4-series .sec4-series-content1 .container .row .sec4-series-content2 .col-md-3 .box-shadow-editor {
+		height: 275px !important;
+		padding: 7.5px;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.tv-series-bg .img-holder-tv {
+		width: 350px;
+		height: 482px !important;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0 auto;
+		margin-top: 18px;
+	}
+	.subscription-section .row .hand-image {
+		position: relative !important;
+		padding-top: 84px;
+	}
+	.subscription-section .row .trial-holder h2 {
+		font-family: 'CoolveticaRg-Regular';
+		font-size: 62px;
+		color: #2d2d2d;
+		margin-left: 162px;
+		margin-top: 775px !important;
+		position: absolute;
+		top: 0;
+	}
+	.subscription-section .row .left-margin-hand {
+		margin-left: 0px !important;
+	}
+	.col-md-12 .col-md-6 {
+		display: inline;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		vertical-align: top;
+	}
+	.subscription-section .row .col-md-12 .row .member {
+		max-width: 318px;
+		padding-left: 10px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+@media (max-width: 970px) and (min-width: 769px) {
+	.navbar-right {
+		float: right!important;
+		margin-right: -15px;
+		margin-top: 0px;
+	}
+	.navi-holder .logo-holder img {
+		padding-left: 0px;
+		max-width: 188px;
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 10px 3px;
+	}
+	.navi-holder .right-bar .btn-login {
+		width: 90px;
+		height: 38px;
+		border-radius: 4px;
+		background-color: #00557e;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #fff;
+		margin-right: 10px;
+		padding-top: 14px;
+	}
+	.navi-holder .right-bar .btn-signup {
+		width: 90px;
+		height: 38px;
+		border-radius: 4px;
+		background-color: #e6e6e6;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #00557e;
+		padding-top: 14px;
+	}
+	.navi-holder .right-bar ul li a {
+		font-family: 'Gotham-Book';
+		line-height: 12px;
+		font-size: 11px;
+		color: #3d3d3d;
+		font-weight: bold;
+		letter-spacing: 0;
+		padding-top: 18px;
+	}
+	.navi-holder .logo-holder img {
+		padding-left: 0px;
+		max-width: 188px;
+		padding-top: 15px;
+	}
+}
+@media (max-width: 782px) and (min-width: 768px) {
+	.center-position2 {
+		margin: 0 auto;
+		width: 175px !important;
+	}
+}
+@media (max-width: 768px) {
+	#movieinfoholder {
+		margin-top: 0;
+	}
+	.season-label {
+		margin-left: 0px;
+	}
+	.search-books-section {
+		padding-left: 15px;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 16.58px;
+		text-align: left;
+		line-height: 24px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		font-size: 19px;
+	}
+	.movie-title h3 {
+		text-align: left;
+		line-height: 11px;
+		font-size: 12.5px;
+		margin-top: 0;
+	}
+	.movie-holder {
+		margin-top: 10px;
+	}
+	.search-books-section {
+		padding-left: 15px;
+	}
+	.num-pos h3 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	/* line 1793, ../sass/main.scss */
+	.home-banner {
+		background-position: center;
+		min-height: 380px;
+		max-height: 380px;
+	}
+	/* line 1799, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 100px;
+	}
+	/* line 1802, ../sass/main.scss */
+	.home-banner .banner-content img {
+		height: 200px;
+	}
+	/* line 1807, ../sass/main.scss */
+	.navi-holder {
+		margin: 0;
+	}
+	/* line 1810, ../sass/main.scss */
+	.navi-holder .logo-holder img {
+		max-width: 180px;
+		margin-top: 6px;
+	}
+	/* line 1814, ../sass/main.scss */
+	.navi-holder .right-bar {
+		text-align: center;
+	}
+	/* line 1817, ../sass/main.scss */
+	.navi-holder .right-bar .btn-login {
+		width: 68px;
+		height: 34px;
+		border-radius: 4px;
+		line-height: unset;
+		background-color: #00557e;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #ffffff;
+		/* margin: 0; */
+	}
+	/* line 1827, ../sass/main.scss */
+	.navi-holder .right-bar .btn-signup {
+		width: 69px;
+		height: 34px;
+		line-height: unset;
+		border-radius: 4px;
+		background-color: #e6e6e6;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		color: #00557e;
+		/* margin: 10px auto; */
+	}
+	/* line 1836, ../sass/main.scss */
+	.navi-holder .right-bar ul {
+		/* padding-top: 15px; */
+		background-color: transparent;
+	}
+	/* line 1839, ../sass/main.scss */
+	.navi-holder .right-bar ul li {
+		margin: 0 auto;
+	}
+	/* line 1841, ../sass/main.scss */
+	.navi-holder .right-bar ul li a {
+		font-family: 'Gotham-Book';
+		line-height: 12px;
+		font-size: 9px;
+		color: #3d3d3d;
+		letter-spacing: 0;
+	}
+	/* line 1864, ../sass/main.scss */
+	.subscription-section .row .col-md-12 {
+		text-align: center;
+	}
+	/* line 1867, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row {
+		padding-right: 0px;
+	}
+	/* line 1870, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member {
+		max-width: 400px;
+		padding-left: 10px;
+	}
+	/* line 1873, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member p {
+		padding: 0px 30px 30px 30px;
+	}
+}
+@media (max-width: 767px) {
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 15.88px;
+		text-align: left;
+		line-height: 24px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		font-size: 18px;
+	}
+	.movie-title h3 {
+		text-align: left;
+		line-height: 19px;
+		font-size: 20.5px;
+		margin-top: 0;
+	}
+	.search-books-section {
+		padding-left: 15px;
+	}
+	.num-pos h3 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	/* line 1884, ../sass/main.scss */
+	.navi-holder {
+		height: 84px !important;
+	}
+	/* line 1887, ../sass/main.scss */
+	.navi-holder .logo-holder img {
+		padding-left: 50px;
+	}
+	/* line 1891, ../sass/main.scss */
+	.navi-holder .right-bar {
+		text-align: center;
+		padding: 0;
+		border: none;
+		width: 100%;
+		margin-top: 24px;
+	}
+	/* line 1895, ../sass/main.scss */
+	.navi-holder .right-bar .btn-login {
+		margin: 0 auto;
+	}
+	/* line 1899, ../sass/main.scss */
+	.navi-holder .right-bar .btn-signup {
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	/* line 1903, ../sass/main.scss */
+	.navi-holder .right-bar ul {
+		background-color: #fff !important;
+	}
+	/* line 1905, ../sass/main.scss */
+	.navi-holder .right-bar ul li {
+		margin: 0 auto;
+	}
+	/* line 1907, ../sass/main.scss */
+	.navi-holder .right-bar ul li a {
+		font-family: 'Gotham-Book';
+		font-size: 12px;
+		color: #3d3d3d;
+		font-weight: bold;
+	}
+	/* line 1918, ../sass/main.scss */
+	.home-banner {
+		background-position: center;
+		background-size: cover;
+		min-height: 400px;
+		max-height: 400px;
+	}
+	/* line 1924, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 120px;
+	}
+	/* line 1927, ../sass/main.scss */
+	.home-banner .banner-content img {
+		height: 200px;
+	}
+	/* line 1947, ../sass/main.scss */
+	.subscription-section .row .trial-holder h2 {
+		margin-top: 250px;
+	}
+	/* line 1952, ../sass/main.scss */
+	.subscription-section .row .trial-holder .hand-image {
+		position: absolute;
+		padding-top: 300px;
+		margin-left: -20px;
+		margin-top: -210px;
+	}
+	/* line 1941, ../sass/main.scss */
+	.subscription-section .row .left-margin-hand {
+		margin-left: 0;
+		position: inherit;
+		margin-top: 400px;
+	}
+	/* line 1946, ../sass/main.scss */
+	.subscription-section .row .col-md-12 {
+		text-align: center;
+	}
+	/* line 1948, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row {
+		padding-left: 0px;
+	}
+	/* line 1951, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member {
+		padding-left: 10px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	/* line 1955, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member p {
+		padding: 0px 30px 30px 30px;
+	}
+	.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+		padding-left: 0px;
+		text-align: center;
+	}
+	.navi-holder .right-bar ul {
+		background-color: #fff !important;
+		overflow-x: hidden !important;
+		min-height: 222px;
+	}
+	.navbar-nav {
+		margin: 0 !important;
+	}
+	.navi-holder .right-bar .btn-login {
+		width: 95px;
+	}
+	.navi-holder .right-bar .btn-signup {
+		width: 95px;
+	}
+}
+@media (max-width: 622px) {
+	.search-books-section-edit .form input {
+		width: 470px;
+	}
+}
+@media (max-width: 600px) {
+	.footer .container .social ul li {
+		display: inline-block;
+		padding: 0 14px;
+	}
+}
+@media (max-width: 584px) and (min-width: 426px) {
+	.footer .container {
+		height: 374px;
+		width: 100%;
+		text-align: center;
+		padding-top: 73px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 575px) {
+	.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+		font-size: 20px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+		padding: 5px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+		padding: 5px;
+	}
+}
+@media (max-width: 556px) {
+	.search-books-section-edit .form input {
+		width: 400px;
+	}
+}
+@media (max-width: 502px) {
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+		padding: 2px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+		padding: 2px;
+	}
+}
+@media (max-width: 500px) {
+	.search-books-section-edit .form input {
+		width: 350px;
+	}
+}
+@media (max-width: 476px) {
+	.table-btn img {
+		width: 20px;
+	}
+	.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+		font-size: 18px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+		font-size: 15px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+		font-size: 15px;
+	}
+}
+@media (max-width: 443px) {
+	.table-btn img {
+		width: 20px;
+	}
+	.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+		font-size: 15px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+		font-size: 12px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+		font-size: 12px;
+	}
+}
+@media (max-width: 438px) {
+	.navi-holder .logo-holder img {
+		padding-left: 0px;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		height: 473px;
+	}
+	.tv-series-bg .img-holder-tv {
+		height: 507px;
+	}
+}
+@media (max-width: 425px) {
+	.max-width-425 {
+		max-width: 255px;
+	}
+	.sec2-series .owl-carousel .owl-nav .owl-prev {
+		position: absolute;
+		left: 47%;
+	}
+	.sec2-series .owl-carousel .owl-nav .owl-next {
+		position: absolute;
+		right: 47%;
+	}
+	.row {
+		margin: 0;
+	}
+	.navbar-nav {
+		margin: 0;
+	}
+	.navbar-toggle {
+		margin: 24px 15px;
+	}
+	.navi-holder .right-bar {
+		margin-top: 0;
+	}
+	.navi-holder .right-bar .btn-login,
+	.navi-holder .right-bar .btn-signup {
+		width: 95px;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.search-books-section-edit .form input {
+		width: 324px;
+		height: 31px;
+		margin-top: 22px;
+	}
+	.search-books-section-edit .form button {
+		margin-top: 22px;
+	}
+	.tv-series-bg .img-holder-tv {
+		width: 100%;
+		height: 419px !important;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin-top: 18px;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.season-label {
+		margin-top: 39px;
+		margin-left: 0;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.movie-title h2 {
+		font-family: "Gotham-Medium";
+		font-size: 35px;
+		text-align: left;
+		line-height: 31px;
+	}
+	.movie-title h3 {
+		text-align: left;
+		line-height: 12px;
+		font-size: 12px;
+		margin-top: 0;
+	}
+	.books-banner {
+		min-height: 80px;
+	}
+	.movie-play {
+		height: 250px !important;
+	}
+	.movie-holder {
+		min-height: 0;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	.num-pos h3 {
+		text-align: center;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 17.58px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		display: inline-block;
+		margin: 0 4px;
+		cursor: pointer;
+	}
+	.episode-num li {
+		font-size: 15px;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+		padding-bottom: 15px;
+	}
+	/* line 1967, ../sass/main.scss */
+	.home-banner {
+		background-position: center;
+		min-height: 230px;
+		max-height: 230px;
+	}
+	/* line 1972, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 50px;
+		padding-left: 0;
+	}
+	/* line 1976, ../sass/main.scss */
+	.home-banner .banner-content img {
+		height: 120px;
+	}
+	/* line 1980, ../sass/main.scss */
+	.home-banner .banner-content a button {
+		width: 150px;
+		height: 35px;
+		font-size: 15px;
+	}
+	/* line 1987, ../sass/main.scss */
+	.navi-holder .logo-holder img {
+		padding-left: 15px;
+		padding-top: 13px;
+	}
+	/* line 1992, ../sass/main.scss */
+	.footer {
+		margin-top: 0 !important;
+	}
+	/* line 1995, ../sass/main.scss */
+	.footer .container {
+		width: 100%;
+		text-align: center;
+		padding-top: 73px;
+		margin: 0 auto;
+		min-height: 360px;
+	}
+	/* line 2002, ../sass/main.scss */
+	.footer .container .footer-nav {
+		display: flex;
+		justify-content: center;
+	}
+	/* line 2006, ../sass/main.scss */
+	.footer .container .footer-nav ul {
+		margin: 0 auto;
+		padding-left: 0 !important;
+	}
+	/* line 2009, ../sass/main.scss */
+	.footer .container .footer-nav ul li {
+		display: inline-block;
+	}
+	/* line 2011, ../sass/main.scss */
+	.footer .container .footer-nav ul li a {
+		font-family: 'Gotham-Book';
+		font-weight: bold;
+		font-size: 12px;
+		color: #fff;
+		margin: 0 auto;
+		letter-spacing: 2px;
+	}
+	/* line 2023, ../sass/main.scss */
+	.footer .container .form {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	/* line 2030, ../sass/main.scss */
+	.footer .container .form form input {
+		width: 61vw;
+	}
+	/* line 2033, ../sass/main.scss */
+	.footer .container .form form button {
+		position: relative;
+	}
+	/* line 2039, ../sass/main.scss */
+	.footer .container .social {
+		margin: 0 auto;
+		margin-top: 14px;
+		display: flex;
+		justify-content: center;
+		padding-left: 0px;
+	}
+	/* line 2046, ../sass/main.scss */
+	.footer .container .social ul {
+		padding-left: 0;
+	}
+	/* line 2048, ../sass/main.scss */
+	.footer .container .social ul li {
+		padding: 0 15px;
+	}
+	/* line 2051, ../sass/main.scss */
+	.footer .container .social ul li a {
+		color: #367999 !important;
+	}
+	/* line 2053, ../sass/main.scss */
+	.footer .container .social ul li a i {
+		font-weight: bold;
+	}
+	/* line 2063, ../sass/main.scss */
+	.search-latest-section .form input {
+		width: 350px;
+		margin-left: 15px;
+	}
+	/* line 2068, ../sass/main.scss */
+	.search-books-section .form input {
+		width: 350px;
+		margin-left: 15px;
+	}
+	/* line 2072, ../sass/main.scss */
+	.latest-banner {
+		padding-bottom: 20px;
+	}
+	.subscription-section>.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.footer .container .social ul li a {
+		color: #367999 !important;
+	}
+	#toggle-right-sidebar {
+		margin-top: 40px !important;
+		margin-right: 20px !important;
+	}
+	.sidebar-bg .sched-bg .row .col-md-4 span {
+		font-size: 11px;
+	}
+}
+@media (max-width: 411px) {
+	.search-books-section-edit .form input {
+		width: 243px;
+		height: 31px;
+		margin-top: 22px !important;
+		max-width: 100%;
+	}
+}
+@media (max-width: 402px) {
+	.footer .container .social ul li {
+		display: inline-block;
+		padding: 0 7px;
+	}
+	.footer .container {
+		min-height: 350px;
+		padding-top: 15px;
+	}
+}
+@media (max-width: 393px) {
+	.navi-holder .logo-holder img {
+		margin-top: -54px;
+	}
+	.search-books-section-edit .form input {
+		margin: 0 auto !important;
+		width: 265px;
+	}
+	.search-books-section-edit .form button {
+		margin-top: 23px;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		height: 460px;
+	}
+	.tv-series-bg .img-holder-tv {
+		height: 494px;
+	}
+	.movie-title {
+		margin-top: 10px;
+	}
+	.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 h3 {
+		font-size: 22px;
+	}
+	.sec1-series .sec1-series-content1 .container .row .sec1-series-content2 .col-md-3 h4 {
+		font-size: 22px;
+	}
+	.movie-title h2 {
+		font-size: 25px;
+  }
+  .search-books-section-edit .form input {
+		width: 324px;
+		height: 31px;
+		margin-top: 22px !important;
+	}
+}
+@media (max-width: 375px) {
+	.navi-holder .logo-holder img {
+		margin-top: 5px;
+	}
+	.search-books-section-edit .form input {
+		margin: 23px 0px !important;
+	}
+	.tv-series-bg .img-holder-tv {
+		width: 100%;
+		height: 349px !important;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		height: 100%;
+	}
+	.footer .container .social ul li {
+		padding: 0 10px;
+	}
+	.subscription-section .row .hand-image {
+		width: 330px;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.search-books-section-edit .form input {
+		width: 259px;
+		height: 31px;
+		margin-top: 22px;
+	}
+	.season-label {
+		margin-top: 39px;
+		margin-left: 0;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.movie-title h2 {
+		font-family: "Gotham-Medium";
+		font-size: 30px;
+		text-align: left;
+		line-height: 31px;
+	}
+	.movie-title h3 {
+		text-align: left;
+		line-height: 13px;
+		font-size: 12.5px;
+		margin-top: 0;
+	}
+	.books-banner {
+		min-height: 80px;
+	}
+	.movie-play {
+		height: 230px !important;
+	}
+	.movie-holder {
+		min-height: 0;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	.num-pos h3 {
+		text-align: center;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 15.58px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		display: inline-block;
+		margin: 0 4px;
+		cursor: pointer;
+	}
+	.episode-num li {
+		font-size: 18px;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+	}
+	/* line 2079, ../sass/main.scss */
+	.navbar-brand {
+		padding: 0 !important;
+		padding-top: 10px !important;
+		padding-left: 5px !important;
+	}
+	/* line 2084, ../sass/main.scss */
+	.home-banner {
+		background-position: center;
+		min-height: 200px;
+		max-height: 200px;
+	}
+	/* line 2089, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 40px;
+	}
+	/* line 2092, ../sass/main.scss */
+	.home-banner .banner-content img {
+		height: 100px;
+	}
+	/* line 2096, ../sass/main.scss */
+	.home-banner .banner-content a button {
+		width: 93px;
+		height: 30px;
+		font-size: 10px;
+	}
+	/* line 2105, ../sass/main.scss */
+	.footer .container .form form input {
+		width: 67vw;
+	}
+	/* line 2108, ../sass/main.scss */
+	.footer .container .form form button {
+		position: relative;
+		width: 60px;
+	}
+	/* line 2114, ../sass/main.scss */
+	.search-latest-section .form input {
+		width: 300px;
+		margin-left: 15px;
+	}
+	/* line 2119, ../sass/main.scss */
+	.search-books-section .form input {
+		width: 300px;
+		margin-left: 15px;
+	}
+	.subscription-section .row .trial-holder h2 {
+		margin-top: 223px;
+		margin-left: 132px;
+		font-size: 52px;
+	}
+}
+@media (max-width: 368px) {
+	.table-btn img {
+		width: 20px;
+	}
+	.sec-schedule .container .row .col-md-10 table>thead>tr>th {
+		font-size: 11px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>th {
+		font-size: 11px;
+	}
+	.sec-schedule .container .row .col-md-10 table>tbody>tr>td {
+		font-size: 11px;
+	}
+	.tv-series-bg .img-holder-tv {
+		height: 370px !important;
+	}
+}
+@media (max-width: 320px) {
+	.search-books-section-edit .form input {
+		margin-top: 23px !important;
+	}
+	#left-part {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.episode-num {
+		font-family: "Gotham-Light";
+		font-size: 2.07px;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.search-books-section-edit .form input {
+		width: 219px;
+		height: 31px;
+		margin-top: 23px;
+	}
+	.search-books-section-edit .form button {
+		margin-top: 23px;
+	}
+	.tv-series-bg .img-holder-tv {
+		width: 100%;
+		height: 380px !important;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: -3px 4.33px 20px -4px #171717;
+		margin: 0 auto;
+		margin-top: 18px;
+	}
+	.tv-series-bg .img-holder-tv .shadow-inset {
+		box-shadow: 0px 0px 15px 0px #fff inset;
+		width: 100%;
+		height: 100% !important;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.season-label {
+		margin-top: 39px;
+		margin-left: 0;
+	}
+	.season-position {
+		margin-left: 0;
+	}
+	.movie-title h2 {
+		font-family: "Gotham-Medium";
+		font-size: 25px;
+		text-align: left;
+		line-height: 31px;
+	}
+	.movie-title h3 {
+		text-align: left;
+	}
+	.books-banner {
+		min-height: 80px;
+	}
+	.movie-play {
+		height: 180px !important;
+	}
+	.movie-holder {
+		min-height: 0;
+	}
+	.season-position h3 {
+		text-align: center;
+	}
+	.num-pos h3 {
+		text-align: center;
+	}
+	.movie-des p {
+		font-family: "Gotham-Book";
+		color: #3d3d3d;
+		font-size: 14.58px;
+		text-align: left;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.episode-num li {
+		display: inline-block;
+		margin: 0 4px;
+		cursor: pointer;
+	}
+	.navi-holder .right-bar ul {
+		position: relative;
+		z-index: 2;
+	}
+	/* line 2126, ../sass/main.scss */
+	.home-banner {
+		min-height: 170px;
+		max-height: 170px;
+	}
+	/* line 2129, ../sass/main.scss */
+	.home-banner .banner-content {
+		padding-top: 20px;
+	}
+	/* line 2136, ../sass/main.scss */
+	.navbar-brand {
+		padding: 0 !important;
+		padding-top: 10px !important;
+		padding-left: 5px !important;
+	}
+	/* line 2140, ../sass/main.scss */
+	.navbar-brand img {
+		width: 245px;
+	}
+	/* line 2147, ../sass/main.scss */
+	.subscription-section .row .col-md-12 .row .member {
+		margin-bottom: 20px;
+	}
+	/* line 2150, ../sass/main.scss */
+	.footer .container {
+		min-height: 308px;
+		padding-top: 15px;
+	}
+	/* line 2153, ../sass/main.scss */
+	.footer .container .form form input {
+		border-radius: 4px 0px 0px 4px;
+		box-shadow: 1.5px 2.598px 3px 0px #171717;
+		width: 71vw;
+		height: 32px;
+		padding: 16px;
+		border: 0;
+		font-family: 'Gotham-Light';
+		color: #636363;
+	}
+	/* line 2163, ../sass/main.scss */
+	.footer .container .social {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	/* line 2166, ../sass/main.scss */
+	.footer .container .social ul {
+		padding-left: 10px;
+	}
+	/* line 2168, ../sass/main.scss */
+	.footer .container .social ul li {
+		padding: 0 5px;
+	}
+	/* line 2171, ../sass/main.scss */
+	.footer .container .social ul li a {
+		color: #367999 !important;
+	}
+	/* line 2173, ../sass/main.scss */
+	.footer .container .social ul li a i {
+		font-weight: bold;
+	}
+	/* line 2182, ../sass/main.scss */
+	.popular-section .popular-h .popular-category h2 {
+		padding-left: 10px;
+	}
+	/* line 2185, ../sass/main.scss */
+	.popular-section .popular-h2 .popular-category h2 {
+		padding-left: 10px;
+	}
+	/* line 2189, ../sass/main.scss */
+	.search-latest-section .form input {
+		width: 44%;
+		margin-left: 15px;
+	}
+	/* line 2194, ../sass/main.scss */
+	.search-books-section .form input {
+		width: 245px;
+		margin-left: 15px;
+	}
+	/* line 2199, ../sass/main.scss */
+	.latest-banner h2 {
+		margin-top: 15px;
+		font-size: 40px;
+	}
+	/* line 2204, ../sass/main.scss */
+	.search-latest-section .top-holder {
+		margin: 0;
+	}
+	/* line 2206, ../sass/main.scss */
+	.search-latest-section a button {
+		font-size: 12px;
+		width: 100px;
+	}
+	/* line 2211, ../sass/main.scss */
+	.books-banner h2 {
+		margin-bottom: 20px;
+  }
+  .search-latest-section .form {
+    margin: 0 auto;
+    padding: 23px 0;
+    display: flex;
+    max-width: 296px;
+    justify-content: left;
+    position: relative;
+  }
+  .select-cat select {
+    width: 110px;
+    right: 5px;
+    bottom: 25px;
+  }
+  .coming-soon-movies{
+    right: 16%!important;
+    top: 343px!important;
+    z-index: 200!important;
+  }
+  .max-width-425 {
+    max-width: 160px;
+  }
+}

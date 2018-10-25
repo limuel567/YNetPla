@@ -49,7 +49,7 @@
                     <?php $count = 0; ?>
                     @foreach($movie as $key => $value)
                         @if($count <= 3)
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <a href="movies/{{Crypt::encrypt($value->getId())}}">
                                 <div class="img-holder">
                                     <div class="shadow-inset" style="background-image: url('{!!$value->getPosterImage() == '' ? $settings->avatar : '//image.tmdb.org/t/p/w342'.$value->getPosterImage() !!}');"></div>
@@ -77,7 +77,7 @@
                     @foreach($stored_shows as $key => $value)
                         <?php $value = unserialize($value['serialize']); ?>
                         @if($count <= 3)
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <a href="tv-series/{{Crypt::encrypt($value['id'])}}">
                                 <div class="img-holder">
                                     <div class="shadow-inset" style="background-image: url('{!!$value['image']['medium'] == '' ? $settings->avatar : 'https://'.substr($value['image']['medium'], 7) !!}');"></div>
@@ -103,8 +103,12 @@
                 <div class="row">
                     @foreach ($books['results']['lists'][0]['books'] as $key => $value)
                     @if ($key < 4)
-                    <div class="col-md-3">
-                        <a href="#">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <?php 
+                            $volumeData = App\Models\Configuration::getFile('https://www.googleapis.com/books/v1/volumes?q=isbn:'.$value['primary_isbn10'].'&key=AIzaSyCTRZ-B6RTHUNCzDdI8kLdiHT9Yckw-nIU');
+                            $idAndPath = ['id' => $volumeData['items'][0]['selfLink'], 'path' => $value['book_image']]    
+                        ?>
+                        <a href="books/{{Crypt::encrypt(serialize($idAndPath))}}">
                             <div class="img-holder">
                                 <div class="shadow-inset" style="background-image: url('{{$value['book_image']}}');"></div>
                             </div>
@@ -127,7 +131,7 @@
             <div class="container">
                 <div class="row">
                     @foreach($articles as $key => $value)
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
                             <a href="articles/{{Crypt::encrypt($value['id'])}}">
                                 <div class="img-holder">
                                     <div class="shadow-inset" style="background-image: url('{!!$value['image'] == '' ? $settings->avatar : 'https://'.substr($value['image'], 7) !!}');"></div>

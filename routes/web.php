@@ -153,7 +153,7 @@ Route::group(['middlewareGroups' => ['web']], function(){
 				// ---------- Post Method ---------- //
 
 				// ---------- Get Method ---------- //
-				Route::get('{id}', 'MainController@getArticleInner');
+				Route::get('{id}', 'MainController@getBookInner');
 			});
 			// UnAuthenticated for user interface
 			Route::get('/', 'MainController@getIndex');

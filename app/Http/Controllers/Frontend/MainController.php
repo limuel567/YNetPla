@@ -500,27 +500,22 @@ class MainController extends Controller {
         return view('backend.login', $data);
     }
 
-    function getBookInner(Request $request)
+    function getBookInner($id)
     {
         $data['segment'] = $this->segment;
         if(Admin::check()){
-            if($request['page'] == null){$request['page'] = 1;}
-			$data['page'] = $request['page'];
-            if($request->keywords != null){
-                $col = new Collection(Article::where('name', 'like', '%' . $request->keywords . '%')->orderBy('created_at', 'desc')->get());
-                $data['keywords'] = $request->keywords;
-            }else{
-                $col = new Collection(Article::orderBy('created_at', 'desc')->get());
-                $data['keywords'] = '';
-            }
-            $data['entries_count'] = count($col);
-            $currentPage = LengthAwarePaginator::resolveCurrentPage();
-            $perPage = 20;
-            $currentPageSearchResults = $col->slice(($currentPage - 1) * $perPage, $perPage)->all();
-            $data['entries'] = new LengthAwarePaginator($currentPageSearchResults, count($col), $perPage, $currentPage,['path' => LengthAwarePaginator::resolveCurrentPath()] );
+            $id = Crypt::decrypt($id); 
+            $idAndPath = unserialize($id);
+            $data['keywords'] = '';
             $data['footer'] = PageContent::getData('none',2);
             $data['settings'] = DefaultSetting::find(1);
-            return view('frontend.articles', $data);
+            $book = $this->getFile($idAndPath['id'].'?key=AIzaSyCTRZ-B6RTHUNCzDdI8kLdiHT9Yckw-nIU');
+            $data['associated'] = $this->getFile($idAndPath['id'].'/associated?key=AIzaSyCTRZ-B6RTHUNCzDdI8kLdiHT9Yckw-nIU');
+            $data['other_books'] = $this->getFile('https://www.googleapis.com/books/v1/volumes?q=inauthor:'.str_replace(' ', '%20', $book['volumeInfo']['authors'][0]).'&key=AIzaSyCTRZ-B6RTHUNCzDdI8kLdiHT9Yckw-nIU');
+            $data['selected'] = $book;
+            $data['selected']['path']=$idAndPath['path'];
+            // $data['articles'] = Article::orderBy('updated_at','desc')->get();
+            return view('frontend.book-inner', $data);
         }
         return view('backend.login', $data);
     }

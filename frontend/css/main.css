@@ -187,7 +187,7 @@ label {
 /* line 18, ../sass/main.scss */
 a,
 a:hover {
-	text-decoration: none;
+	text-decoration: none!important;
 }
 /* line 19, ../sass/main.scss */
 * html .clearfix {
@@ -1742,6 +1742,9 @@ h1 span {
 .sec2-series .owl-carousel .owl-nav .fa {
 	color: #fff;
 }
+.sec2-series .second-slider .owl-nav .fa {
+	color: #000;
+}
 .sec2-series .owl-carousel .owl-nav .disabled {
 	opacity: 0.5;
 }
@@ -2790,8 +2793,6 @@ form {
 		right: 48%;
 	}
 	.popular-section .col-md-3 {
-		display: inline-block !important;
-		position: relative !important;
 	}
 	.popular-section .container {
 		width: 100% !important;
@@ -3119,8 +3120,6 @@ form {
 		padding-left: 0px;
 	}
 	.popular-section .col-md-3 {
-		display: inline-block !important;
-		position: relative !important;
 	}
 	.popular-section .container {
 		width: 100% !important;
